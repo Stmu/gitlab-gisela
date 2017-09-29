@@ -1,0 +1,26 @@
+{
+  "name": "gitlab-giselea",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "npm run build && NODE_CONFIG=user node lib/main.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "color": "^2.0.0",
+    "node-blink1": "^0.2.2",
+    "request": "^2.82.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0"
+  }
+}
